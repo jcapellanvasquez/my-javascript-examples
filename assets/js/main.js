@@ -12,7 +12,12 @@ const router = () => {
         {path: "/async-await", view: () => "<h4>Ruta async-await cargada</h4>"}
     ];
 
-    const currentRoute = routes.find( route => route.path === location.pathname)
+    let currentRoute = routes.find( route => route.path === location.pathname)
+
+    if (!currentRoute) {
+        currentRoute = routes[0];
+    }
+
     document.querySelector("#app").innerHTML = currentRoute.view();
 };
 
@@ -26,4 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     router()
+    console.log(location.pathname)
 });
