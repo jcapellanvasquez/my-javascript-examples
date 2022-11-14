@@ -1,5 +1,5 @@
 export default class {
-    title = "Asíncrono";
+    title = "Programación asíncrona";
     constructor() {
         this.setTitle(this.title);
     }
@@ -12,12 +12,11 @@ export default class {
         return `
             <h2 class="topic-title">${this.title}</h2>
             <p class="topic-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Expedita maxime officia omnis fugiat molestias dicta fuga
-                    placeat impedit, similique obcaecati quis perferendis 
-                reiciendis soluta sequi sed nisi itaque laborum! Maiores.
+                Normalmente, el código de un programa determinado se ejecuta directamente, 
+                y solo sucede una cosa a la vez. Si una función se basa en el resultado de otra función, tiene que esperar a que la otra función termine y 
+                regrese, y hasta que eso suceda, todo el programa se detiene esencialmente desde la perspectiva del usuario.
             </p>
-            <h4 class="topic-sub-title">Promesas</h4>
+            <h4 class="topic-sub-title">Código asincróno</h4>
             <div class="topic-cad-code-example">
                 <script src="https://gist.github.com/jcapellanvasquez/f94d799bebd8b868bf93f7a0f6831e9b.js"></script>
             </div>
