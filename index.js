@@ -13,4 +13,4 @@ app.get("/*", (req, res) => res.sendFile(path.resolve(__dirname, 'index.html')))
 
 app.listen(port, console.log(`Application is running on port: ${port}: go to http://localhost:${port}`));
 
-export { app };
+export default app;
