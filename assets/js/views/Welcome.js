@@ -10,22 +10,21 @@ export default class {
 
     async view() {
         return `
-            <h2 class="topic-title">${this.title}</h2>
-            <p class="topic-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Expedita maxime officia omnis fugiat molestias dicta fuga
-                    placeat impedit, similique obcaecati quis perferendis 
-                reiciendis soluta sequi sed nisi itaque laborum! Maiores.
-            </p>
-            <h4 class="topic-sub-title">Promesas</h4>
-            <div class="topic-cad-code-example">
-                <script src="https://gist.github.com/jcapellanvasquez/f94d799bebd8b868bf93f7a0f6831e9b.js"></script>
-            </div>
-            <div class="flex topic-button">
-                <button class="btn btn-secondary">
-                    🚀 Correr ejercicio
+        <div class="flex welcome-wrapper">
+            <div class="welcome-content">
+                <div class="welcome-profile">
+                    <img src="/assets/img/profile.jpg" alt="profile">
+                </div>
+                <h2 class="welcome-title">👋 Julio J. Capellán</h2>
+                <p class="welcome-description">
+                    Aquí podras encontrar varios ejemplos prácticos de los temas que 
+                    se trataran en el diplomado de javascript
+                </p>
+                <button class="btn btn-welcome">
+                    Ir a los ejemplos
                 </button>
             </div>
+        </div>
     `;
     }
 }

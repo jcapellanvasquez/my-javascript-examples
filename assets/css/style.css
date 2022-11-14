@@ -6,6 +6,7 @@
     --dark-color: #0D1821;
     --light-color: #F3F6F6;
     --hover-light-color: #E8EDED;
+    --hover-primary-color: #F0877F;
     --white-color: #FFFFFC;
 
 }
@@ -132,6 +133,40 @@ li a {
     justify-content: end;
 }
 
+.welcome-wrapper {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.welcome-content {
+    max-width: 300px;
+    text-align: center;
+}
+
+.welcome-title {
+    color: var(--primary-color);
+}
+
+.welcome-profile {
+    width: 150px;
+    height: 150px;
+    margin: 2rem auto 2rem auto;
+}
+
+.welcome-profile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.welcome-description {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
 /* helper class */
 .btn {
     background-color: var(--white-color);
@@ -151,6 +186,15 @@ li a {
 
 .btn-primary {
     color: var(--primary-color);
+}
+
+.btn-welcome {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-welcome:hover {
+    background-color: var(--hover-primary-color);
 }
 
 .btn-secondary {
