@@ -2,8 +2,10 @@
 
 :root {
     --primary-color: #EB5E55;
+    --secondary-color: #344966;
     --dark-color: #0D1821;
     --light-color: #F3F6F6;
+    --hover-light-color: #E8EDED;
     --white-color: #FFFFFC;
 
 }
@@ -25,7 +27,8 @@ body {
     max-width: 100%;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -56,17 +59,111 @@ footer h5 {
     margin: 0;
     text-align: center;
 }
+
 .container {
     display: flex;
 }
 
 .container nav {
     min-height: calc(100vh - 120px);
-    min-width: 200px;
+    min-width: 250px;
     background-color: var(--white-color);
 }
 
-.container .content {
+ul {
+    padding: 0 1.3rem;
+}
+
+li {
+    margin-top: 1.3rem;
+    padding: 1rem 0;
+    width: 100%;
+    font-weight: 500;
+}
+
+li span {
+    display: block;
+    width: 45px;
+    text-align: center;
+}
+
+li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+.content {
     flex-grow: 1;
     padding: 2rem;
+    flex-direction: column;
+}
+
+.topic-title {
+    font-size: 1.6rem;
+}
+
+.topic-description {
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.topic-title,
+.topic-description {
+    margin: 0 0 1.2rem 0;
+}
+
+.topic-sub-title {
+    font-size: 1.3rem;
+    margin: 1.2rem 0 1rem;
+}
+
+.topic-cad-code-example {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.topic-button {
+    justify-content: end;
+}
+
+/* helper class */
+.btn {
+    background-color: var(--white-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.5;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background-color: var(--hover-light-color);
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    color: var(--primary-color);
+}
+
+.btn-secondary {
+    color: var(--secondary-color);
+}
+
+
+.flex {
+    display: flex;
+}
+
+li.selected {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    font-weight: bold;
 }
