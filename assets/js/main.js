@@ -31,5 +31,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     router()
-    console.log(location.pathname)
 });
