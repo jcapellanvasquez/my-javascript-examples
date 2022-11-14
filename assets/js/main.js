@@ -1,3 +1,4 @@
+import { routes } from './config/routes.js';
 
 
 const navigateTo = (url) => {
@@ -5,20 +6,20 @@ const navigateTo = (url) => {
     router()
 }
 
-const router = () => {
-    const routes = [
-        {path: "/", view: () => "<h4>Ruta por defecto cargada</h4>"},
-        {path: "/promise", view: () => "<h4>Ruta promise cargada</h4>"},
-        {path: "/async-await", view: () => "<h4>Ruta async-await cargada</h4>"}
-    ];
+const updateActivedMenuOption = (url) => {
+    document.querySelectorAll("a[data-link]").forEach(parent => parent.parentElement.classList.remove("selected"))
+    document.querySelector(`a[data-link][href='${url}']`).parentElement.classList.add("selected")
+}
 
-    let currentRoute = routes.find( route => route.path === location.pathname)
+const router = async () => {
+    let currentRoute = routes.find(route => route.path === location.pathname)
 
     if (!currentRoute) {
         currentRoute = routes[0];
     }
-
-    document.querySelector("#app").innerHTML = currentRoute.view();
+    const template = new currentRoute.template();
+    document.querySelector("#app").innerHTML = await template.view();
+    updateActivedMenuOption(currentRoute.path)
 };
 
 window.addEventListener("popstate", router);
