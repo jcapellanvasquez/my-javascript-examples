@@ -1,7 +1,7 @@
 export default class {
     content = document.createElement("div");
-    setTitle(title) {
-        document.title = title;
+    setTitle(titlePage) {
+        document.title = titlePage;
     }
 
     build() {
@@ -10,8 +10,8 @@ export default class {
 
     addAction(action) {
         const actionContainer = document.createElement("div");
+        const btn = document.createElement("button")
         actionContainer.classList.add("flex", "topic-button")
-        let btn = document.createElement("button")
         btn.classList.add("btn", "btn-secondary")
         btn.innerHTML = "🚀 Correr ejercicio"
         btn.addEventListener("click", action)
@@ -20,7 +20,45 @@ export default class {
         return this;
     }
 
-    statictContent() {
+    headerContent(title, description) {
+        this.titleContent(title).descriptionContent(description)
+        return this;
+    }
+
+    exampleContent(titleExample, codeExample) {
+        this.subTitleContent(titleExample).codeExampleContent(codeExample)
+        return this;
+    }
+
+    titleContent(title) {
+        const titleElement = document.createElement("h2")
+        titleElement.classList.add("topic-title")
+        titleElement.innerHTML = title
+        this.content.appendChild(titleElement)
+        return this;
+    }
+
+    descriptionContent(desc) {
+        const descriptionElement = document.createElement("p")
+        descriptionElement.classList.add("topic-description")
+        descriptionElement.textContent = desc;
+        this.content.appendChild(descriptionElement)
+        return this;
+    }
+
+    subTitleContent(subTitle) {
+        const subTitleElement = document.createElement("h4")
+        subTitleElement.classList.add("topic-sub-title")
+        subTitleElement.innerHTML = subTitle
+        this.content.appendChild(subTitleElement);
+        return this;
+    }
+
+    codeExampleContent(codeExample) {
+        const codeExampleElement = document.createElement("div")
+        codeExampleElement.classList.add("topic-cad-code-example")
+        codeExampleElement.innerHTML = codeExample
+        this.content.appendChild(codeExampleElement)
         return this;
     }
 

@@ -97,12 +97,13 @@ li a {
 
 .content {
     flex-grow: 1;
-    padding: 2rem;
+    padding: 4rem;
     flex-direction: column;
 }
 
 .topic-title {
     font-size: 1.6rem;
+    margin: 0 0 1.2rem 0;
 }
 
 .topic-description {
@@ -110,12 +111,9 @@ li a {
     font-size: 1.3rem;
     line-height: 1.5;
     text-align: justify;
+    margin: 0 0 4rem 0;
 }
 
-.topic-title,
-.topic-description {
-    margin: 0 0 1.2rem 0;
-}
 
 .topic-sub-title {
     font-size: 1.3rem;
@@ -131,6 +129,7 @@ li a {
 
 .topic-button {
     justify-content: end;
+    margin: 0 0 3rem 0;
 }
 
 .welcome-wrapper {
@@ -151,7 +150,7 @@ li a {
 .welcome-profile {
     width: 150px;
     height: 150px;
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto 4rem auto;
 }
 
 .welcome-profile img {
@@ -164,7 +163,7 @@ li a {
 .welcome-description {
     font-size: 1rem;
     text-align: justify;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* helper class */
@@ -176,7 +175,7 @@ li a {
     cursor: pointer;
     line-height: 1.5;
     border-radius: 8px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .btn:hover {
