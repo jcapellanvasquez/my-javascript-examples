@@ -18,7 +18,8 @@ const router = async () => {
         currentRoute = routes[0];
     }
     const template = new currentRoute.template();
-    document.querySelector("#app").innerHTML = await template.view();
+    document.querySelector("#app").innerHTML = "";
+    document.querySelector("#app").append(template.view())
     updateActivedMenuOption(currentRoute.path)
 };
 
