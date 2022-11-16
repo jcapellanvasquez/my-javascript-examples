@@ -11,7 +11,7 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 🔲  Manipular el DOM\
 🔲  Operadores\
 🔲  Condicionales\
-🔲  Loops\
+🔲  Loops
 
 ### Intermedio
 >✅  Programacion asíncrona\
@@ -20,13 +20,13 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 🔲  Flexbox\
 🔲  Tipos de datos\
 🔲  Funciones\
-🔲  Scope\
+🔲  Scope
 
 ### Avanzado
 >🔲  Javascript POO\
 🔲  Modules ES6\
 ✅  Programacion asíncrona - Promise\
-✅  Programacion asíncrona - Async/Await\
+✅  Programacion asíncrona - Async/Await
 
 ## ✅  TO DO
  
@@ -36,5 +36,4 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 🔲 Agregar webpack\
 🔲 Agregar webpack - loader html\
 🔲 Agregar webpack - loader scss\
-🔲 Agregar TypeScript como lenguaje por defecto\
-
+🔲 Agregar TypeScript como lenguaje por defecto
