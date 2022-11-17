@@ -25,7 +25,7 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 
 ### Avanzado
 >🔲  Javascript POO\
-🔲  Modules ES6\
+✅   Modules ES6\
 ✅  Programacion asíncrona - Promise\
 ✅  Programacion asíncrona - Async/Await
 
