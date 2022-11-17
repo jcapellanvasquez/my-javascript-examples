@@ -1,4 +1,7 @@
 💡 Projectos y ejemplos para las clases de javascript!!
+
+![enter image description here](https://raw.githubusercontent.com/jcapellanvasquez/my-javascript-examples/main/assets/img/banner.png)
+
 ===
 
 En este repositorio podras encontrar ejemplos de proyectos y algunas practicas que se ven en clase para aprendar las funcionalidades de javascript.
