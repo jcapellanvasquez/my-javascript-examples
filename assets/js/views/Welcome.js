@@ -21,7 +21,7 @@ export default class extends AbstractView{
                         se trataran en el diplomado de javascript
                     </p>
                     <button class="btn btn-welcome">
-                        Ir a los ejemplos
+                        Ver ejemplos
                     </button>
                 </div>
             </div>
@@ -29,7 +29,13 @@ export default class extends AbstractView{
         return this
     }
 
+    addAction() {
+        const btn = this.content.querySelector(".btn")
+        btn.addEventListener("click", this.showMenu)
+        return this;
+    }
+
     view() {
-        return this.statictContent().build()
+        return this.statictContent().hideMenu().addAction().build()
     }
 }

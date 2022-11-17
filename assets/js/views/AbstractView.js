@@ -21,6 +21,7 @@ export default class {
     }
 
     headerContent(title, description) {
+        this.showMenu()
         this.titleContent(title).descriptionContent(description)
         return this;
     }
@@ -59,6 +60,16 @@ export default class {
         codeExampleElement.classList.add("topic-cad-code-example")
         codeExampleElement.innerHTML = codeExample
         this.content.appendChild(codeExampleElement)
+        return this;
+    }
+
+    hideMenu() {
+        document.getElementById("menu").className = "closed";
+        return this;
+    }
+
+    showMenu() {
+        document.getElementById("menu").className = "open";
         return this;
     }
 

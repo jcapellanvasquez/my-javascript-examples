@@ -65,8 +65,12 @@ footer h5 {
     display: flex;
 }
 
-.container nav {
+.container,
+nav {
     min-height: calc(100vh - 120px);
+}
+
+.container nav {
     min-width: 250px;
     background-color: var(--white-color);
 }
@@ -167,6 +171,14 @@ li a {
 }
 
 /* helper class */
+.open {
+    display: block;
+}
+
+.closed {
+    display: none;
+}
+
 .btn {
     background-color: var(--white-color);
     border: none;
