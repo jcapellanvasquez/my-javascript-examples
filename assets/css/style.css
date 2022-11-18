@@ -222,3 +222,12 @@ li.selected {
     border-radius: 10px;
     font-weight: bold;
 }
+
+.loader_wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.loader {
+    
+}

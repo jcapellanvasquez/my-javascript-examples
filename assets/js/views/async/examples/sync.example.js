@@ -16,7 +16,8 @@ export const runSyncExample = () => {
         console.log(msg)
     }
 
-    vestirse()
-    banarse()
     lavarseDientes()
+    banarse()
+    vestirse()
+    
 }

@@ -55,7 +55,7 @@ export default class {
         return this;
     }
 
-    codeExampleContent(codeExample) {
+    async codeExampleContent(codeExample) {
         const codeExampleElement = document.createElement("div")
         codeExampleElement.classList.add("topic-cad-code-example")
         codeExampleElement.innerHTML = codeExample
