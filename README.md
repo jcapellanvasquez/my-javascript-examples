@@ -31,7 +31,8 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 
 ## ✅  TO DO
  
->🔲 Agregar Welcome page\
+>✅ Agregar Welcome page\
+>✅ Agregar loader page\
 🔲 Agregar group menu options: Basico, Intermedio y avanzado\
 🔲 Agregar Prettier\
 🔲 Agregar webpack\
