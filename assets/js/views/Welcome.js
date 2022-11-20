@@ -13,7 +13,7 @@ export default class extends AbstractView{
             <div class="flex welcome-wrapper">
                 <div class="welcome-content">
                     <div class="welcome-profile">
-                        <img src="/assets/img/profile.jpg" alt="profile">
+                        <img src="/assets/img/profile.jpeg" alt="profile">
                     </div>
                     <h2 class="welcome-title">👋 Julio J. Capellán</h2>
                     <p class="welcome-description">
