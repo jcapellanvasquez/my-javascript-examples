@@ -23,6 +23,11 @@ const router = async () => {
     updateActivedMenuOption(currentRoute.path)
 };
 
+
+const hideLoader = () => {
+    document.querySelector(".loader_wrapper").classList.add("hide-loader")
+;}
+
 window.addEventListener("popstate", router);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -34,3 +39,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     router()
 });
+
+window.addEventListener("load", () => hideLoader())
