@@ -16,7 +16,7 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 
 ### Intermedio
 >✅  Programacion asíncrona\
-🔲  Fetch API\
+✅  Fetch API\
 🔲  Regular expression\
 🔲  Flexbox\
 🔲  Tipos de datos\
