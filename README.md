@@ -9,7 +9,7 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
 
 ### Básico 
 >🔲  Tipos de datos\
-🔲  Manipular el DOM\
+✅   Manipular el DOM\
 🔲  Operadores\
 🔲  Condicionales\
 🔲  Loops
