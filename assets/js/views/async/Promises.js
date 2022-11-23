@@ -1,5 +1,6 @@
 import AbstractView from "../AbstractView.js";
 import { PROMISE_EXAMPLE } from "./examples-content/promise-example.content.js";
+import { runPromiseExample } from "./examples/promise.example.js";
 
 export default class extends AbstractView{
     title = "Promesas";
@@ -15,6 +16,6 @@ export default class extends AbstractView{
     view() {
         return this.headerContent(this.title, this.description)
         .exampleContent(this.promiseExampleTitle, PROMISE_EXAMPLE)
-        .addAction(() => console.log("click")).build()
+        .addAction(runPromiseExample).build()
     }
 }
