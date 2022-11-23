@@ -33,7 +33,7 @@ En este repositorio podras encontrar ejemplos de proyectos y algunas practicas q
  
 >✅ Agregar Welcome page\
 >✅ Agregar loader page\
-🔲 Agregar group menu options: Basico, Intermedio y avanzado\
+✅ Agregar group menu options: Basico, Intermedio y avanzado\
 🔲 Agregar Prettier\
 🔲 Agregar webpack\
 🔲 Agregar webpack - loader html\
